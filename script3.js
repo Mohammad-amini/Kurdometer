@@ -1,4 +1,4 @@
-var kurdometers = document.getElementById('kurdo');
+var kurdometers = document.getElementsByClassName('kurdo')[0];
 var kurdometersChilds = kurdometers.children;
 var start = document.getElementById("start");
 var stop = document.getElementById("stop");
