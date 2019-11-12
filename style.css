@@ -1,0 +1,112 @@
+.digit{
+	display: block;
+	font-size: 75px;
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.pkurdo {
+    height: 64px;
+    overflow: hidden;
+    width: 85px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid white;
+    background: red;
+    margin: 15px -2px;
+    line-height: 0.8;
+}
+@font-face {
+  font-family: iransans1;
+  src: url(IRANSansWeb.ttf) format('truetype')
+}
+	.digit-parent{
+		transform: translate(-0%, 0%);
+		/*float: right;*/
+		width: 100%;
+		/*margin-top: -1%;*/
+		right: 50%;
+		text-align: center;
+		vertical-align: middle;
+		overflow: hidden;
+		display: inline-block;
+	}
+.digits.star{
+	padding: 15px 0;
+  cursor: none
+}
+.digits {
+	width: calc(100% / 11);
+	height: 90px;
+	float: right;
+	text-align: center;
+	vertical-align: middle;
+	padding: 6px 0;
+	display: inline;
+	color: #fff;
+	/* background: 0% transparent 50% blue 100% transparent; */
+	border: 1px solid aqua;
+	/* margin-left: -1px; */
+	/* background-image: linear-gradient(180deg , transparent 3%, red 25% 70%, transparent 100%); */
+	background-color: #d71a21;
+}
+.digits p {
+	font-size: 70px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 10px 0 10px 0;
+	line-height: 1;
+	text-shadow: 3px 3px black;
+}
+.my_fade{
+	-webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(7px);
+}
+	@-webkit-keyframes border_animation {
+	  0%   { border: 0; }
+	  25%   { border-right: 1 solid black; }
+	  50%   { border-bottom: 1 solid black; border-right: 1 solid black;}
+	  70%   { border-left: 1 solid black; border-bottom: 1 solid black; border-right: 1 solid black;}
+	  100% { border: 1 solid black; }
+	}
+	@-moz-keyframes border_animation {
+	  0%   { border: 0; }
+	  25%   { border-right: 1 solid black; }
+	  50%   { border-bottom: 1 solid black; border-right: 1 solid black;}
+	  70%   { border-left: 1 solid black; border-bottom: 1 solid black; border-right: 1 solid black;}
+	  100% { border: 1 solid black; }
+	}
+	@-o-keyframes border_animation {
+	  0%   { border: 0; }
+	  25%   { border-right: 1 solid black; }
+	  50%   { border-bottom: 1 solid black; border-right: 1 solid black;}
+	  70%   { border-left: 1 solid black; border-bottom: 1 solid black; border-right: 1 solid black;}
+	  100% { border: 1 solid black; }
+	}
+	@keyframes border_animation {
+	  0%   { border: 0; }
+	  25%   { border-right: 1 solid black; }
+	  50%   { border-bottom: 1 solid black; border-right: 1 solid black;}
+	  70%   { border-left: 1 solid black; border-bottom: 1 solid black; border-right: 1 solid black;}
+	  100% { border: 1 solid black; }
+	}
+.unmouse1{
+    cursor: none;
+}
+#previos{
+  float: left;
+  margin-right: 20px
+}
+.parent{
+	/*background-image: url('img/main-bg1.jpg');*/
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
