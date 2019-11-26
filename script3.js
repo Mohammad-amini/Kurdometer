@@ -27,9 +27,7 @@ var funit = 'px'; //'em'
 // var ps = kurdometers.parentNode;
 // ps.removeChild(kurdometers);
 // ps.innerHTML = "<div id='kurdo'></div>";
-
 function init(){
-	// s.attributes
 	for(var i = 0; i < parsed_pattern.length; i++){
 		var template = `<p class="pkurdo kurdo${i+1} animated">`;
 		rotate_speed.push(0);
@@ -50,13 +48,11 @@ function init(){
 	step = parseFloat(window.getComputedStyle(document.getElementsByClassName('digit')[0], null).getPropertyValue('font-size'));
 }
 init()
-
 function startKurdo(){
 	for(var indx = 0; indx < parsed_pattern.length; indx++)
 		if(except.indexOf(indx) === -1)
 			rotateKurdo(indx);
 }
-
 function rotateKurdo(index){
 	margintops[index][1] = parsed_pattern[index].length * 1 * step;
 	var cof = ((rhythm === 'asc')? parsed_pattern.length - index: index);
@@ -71,15 +67,12 @@ function rotateKurdo(index){
 	}, rotate_speed[index]);
 	v.push(x)
 }
-
 function setKurdo(number){
 	for(var i =0; i < document.getElementsByClassName('pkurdo').length; i++){
 		var item = document.getElementsByClassName('pkurdo')[i];
 		item.style.background = 'lightblue'
-		// item.classList += stop_animate;
 	}
 	nums = 
-	// "0918***8024".split('')
 	number.split('');
 	nums.map((n, i) => {
 		setTimeout(() => {
