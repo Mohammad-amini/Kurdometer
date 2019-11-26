@@ -1,3 +1,4 @@
+// This is a test
 var kurdometers = document.getElementsByClassName('kurdo')[0];
 var kurdometersChilds = kurdometers.children;
 var start = document.getElementById("start");
